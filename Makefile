@@ -1,6 +1,6 @@
 SDK = $(shell xcrun --sdk iphoneos --show-sdk-path)
 
-CFLAGS = -isysroot $(SDK) -arch arm64 -fobjc-arc -framework UIKit -framework Foundation
+CFLAGS = -isysroot $(SDK) -arch arm64 -fobjc-arc -framework UIKit -framework Foundation -framework CoreGraphics
 
 all: build/FloatingBubble.dylib
 
